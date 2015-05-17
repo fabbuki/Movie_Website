@@ -6,7 +6,7 @@ import re
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Nick's Picks</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -87,6 +87,10 @@ main_page_content = '''
 <!DOCTYPE html>
 <html lang="en">
   <body>
+  <div class="jumbotron">
+    <h1>Nick's Favorite Movies</h1>
+    <p>Click to watch a preview!</p>
+  </div>
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
@@ -105,7 +109,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Nick's Favorite Movies</a>
+            <a class="navbar-brand" href="#"></a>
           </div>
         </div>
       </div>
@@ -144,7 +148,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
   # Create or overwrite the output file
-  output_file = open('nicks_picks.html', 'w')
+  output_file = open('index.html', 'w')
 
   # Replace the placeholder for the movie tiles with the actual dynamically generated content
   rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
