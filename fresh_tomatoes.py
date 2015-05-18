@@ -1,3 +1,14 @@
+'''
+The fresh_tomatoes.py program was used with permission from Udacity. The code was provided to students through
+Udacity's Introduction to Programming with Python class.
+
+The original source code can be downloaded here: https://s3.amazonaws.com/udacity-hosted-downloads/ud036/fresh_tomatoes.py
+
+The code has been modified to generate a customized website with personal branding. Titles of pages have changed.
+Final output is index.html, for use as a primary webpage in any web directory.
+Visit www.nickaustinlee.com/movies to see it in action.
+'''
+
 import webbrowser
 import os
 import re
@@ -109,7 +120,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"></a>
+            <--! <a class="navbar-brand" href="#"></a> -->
           </div>
         </div>
       </div>

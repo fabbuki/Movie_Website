@@ -1,12 +1,12 @@
 import media
 import fresh_tomatoes
 
+# Instantiate 7 movies and/or clips with the media.Movie class.
+# Note: Image URLs are customized to work with a local folder called "images".
 toy_story = media.Movie("Toy Story",
                         "A story about toys that come to life.",
                         "images/toy_story.jpg",
                         "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-
-# print toy_story.storyline
 
 boiler_room = media.Movie("Boiler Room", "A fast-talking guy dives into a sophisticated plot to steal money",
                           "images/boiler_room.jpg",
@@ -33,5 +33,9 @@ star_wars_battlefront = media.Movie("Star Wars Battlefront", "Honestly, it's a v
                                     "images/star_wars.jpg",
                                     "https://www.youtube.com/watch?v=ZwWLns7-xN8")
 
+# Create an array of movie objects
 movies = [toy_story, boiler_room, bobalife, linsanity, boom_boom_pow, the_interview, star_wars_battlefront]
+
+# Use the fresh_tomatoes library to create and open the movies HTML page with the movie data.
+# This will also create an index.html file that you can drag into your web folder.
 fresh_tomatoes.open_movies_page(movies)
