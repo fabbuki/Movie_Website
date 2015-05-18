@@ -1,7 +1,5 @@
 # Movie Website
 
-<h2>Udacity Full-Stack Developer Nanodegree</h2>
-
 <h2>Project Contents</h2>
 1. fresh_tomatoes.py: Generates an index.html file with movies rendered to screen. Takes an array of movies as input. 
 2. entertainment_center.py: Most developer interaction occurs here. Developer can add movies to the library by using the python Movie class. 
